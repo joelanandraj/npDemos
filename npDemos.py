@@ -48,6 +48,12 @@ print("\n-----------------------------------------------------------------------
 #Returns an reshaped array(5x2) for the 1-D array 'aray'
 r_aray= np.reshape(aray,(5,2))
 print(r_aray)
+#An another variation of reshape with the second parameter -1, which indicates
+#that the dimension should be automatically calculated based on the size of
+#the array and the other specified dimension.
+print(r_aray.shape)
+print(r_aray.reshape(-1,1))
+
 print("\n---------------------------------------------------------------------------------------\n")
 #shape is used to get the dimension of the array
 print(r_aray.shape)
@@ -60,6 +66,7 @@ print("\n-----------------------------------------------------------------------
 print(r_aray)
 aray = r_aray.transpose()
 print(aray)
+
 print("\n---------------------------------------------------------------------------------------\n")
 #This function returns a concatenated array and
 #the concatenation could be either rowwise or
